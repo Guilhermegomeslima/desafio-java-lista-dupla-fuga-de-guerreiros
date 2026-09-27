@@ -6,5 +6,6 @@ public class Programa {
         lista.inserirFim("portao 2");
         lista.imprimir();
         System.out.println("tamanho da lista: " +  lista.tamanho());
+        System.out.println(lista.obter(2));
     }
 }

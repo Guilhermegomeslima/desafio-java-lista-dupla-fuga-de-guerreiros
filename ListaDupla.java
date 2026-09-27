@@ -51,4 +51,17 @@ public class ListaDupla{
     public int tamanho(){
         return tamanho;        
     }
+
+    public String obter(int pos) {
+        No atual = cabeca;
+
+        if(pos < 0 || pos >= tamanho) {
+        return null;
+        }
+
+        for (int i = 0; i < pos; i++) {
+            atual = atual.proximo;
+        }
+        return atual.nome;
+    }
 }
