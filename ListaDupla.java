@@ -33,4 +33,8 @@ public class ListaDupla{
 
         System.out.println();
     }
+
+    public int tamanho(){
+        return tamanho;        
+    }
 }

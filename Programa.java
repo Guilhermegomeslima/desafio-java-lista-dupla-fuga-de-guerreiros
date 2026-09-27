@@ -4,5 +4,6 @@ public class Programa {
         lista.inserirInicio("Guan Yu");
         lista.inserirInicio("portao 1");
         lista.imprimir();
+        System.out.println("tamanho da lista: " +  lista.tamanho());
     }
 }
