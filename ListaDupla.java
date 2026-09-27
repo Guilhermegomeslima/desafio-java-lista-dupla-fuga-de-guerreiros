@@ -23,6 +23,20 @@ public class ListaDupla{
         tamanho++;
     }
 
+    public void inserirFim(String nome) {
+        No novo = new No(nome);
+
+        if (cabeca == null) {
+            cabeca = novo;
+            cauda = novo;
+        } else {
+            novo.anterior = cauda;
+            cauda.proximo = novo;
+            cauda = novo;
+        }
+        tamanho++;
+    }
+
     public void imprimir() {
         No atual = cabeca;
 
